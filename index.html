@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="沈鹤的个人简历 - 大连财经学院 大数据管理与应用专业">
+  <title>沈鹤 · 个人简历</title>
+  <style>
+    :root {
+      --primary: #1e5bb8;
+      --primary-light: #e8f0fe;
+      --text: #2b2f36;
+      --text-muted: #6b7280;
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --border: #e5e9f0;
+      --radius: 14px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "PingFang SC", "Microsoft YaHei", "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+
+    /* ===== 头部 ===== */
+    header {
+      background: linear-gradient(135deg, #1e5bb8 0%, #3b82d6 60%, #5ea0ea 100%);
+      color: #fff;
+      padding: 56px 0 48px;
+    }
+    .hero { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+    .avatar {
+      width: 96px; height: 96px; border-radius: 50%;
+      background: rgba(255,255,255,.18);
+      border: 3px solid rgba(255,255,255,.6);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 38px; font-weight: 700; flex-shrink: 0;
+    }
+    .hero h1 { font-size: 30px; letter-spacing: 1px; }
+    .hero .tagline { margin-top: 6px; font-size: 15px; opacity: .92; }
+    .hero .tags { margin-top: 12px; display: flex; gap: 8px; flex-wrap: wrap; }
+    .tag {
+      background: rgba(255,255,255,.16);
+      border: 1px solid rgba(255,255,255,.35);
+      padding: 3px 12px; border-radius: 999px; font-size: 13px;
+    }
+
+    /* ===== 联系方式 ===== */
+    .contact-bar { background: #164a99; color: #dce8fa; font-size: 14px; }
+    .contact-bar .container {
+      display: flex; flex-wrap: wrap; gap: 8px 28px; padding: 12px 20px;
+    }
+    .contact-bar a { color: #fff; text-decoration: none; }
+    .contact-bar a:hover { text-decoration: underline; }
+
+    /* ===== 主体 ===== */
+    main { padding: 32px 0 56px; }
+    section { margin-bottom: 28px; }
+    h2 {
+      font-size: 19px; color: var(--primary);
+      display: flex; align-items: center; gap: 10px; margin-bottom: 14px;
+    }
+    h2::before {
+      content: ""; width: 5px; height: 20px; border-radius: 3px;
+      background: var(--primary); display: inline-block;
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 20px 24px;
+      box-shadow: 0 1px 3px rgba(16,42,88,.06);
+    }
+
+    .item { padding: 14px 0; }
+    .item + .item { border-top: 1px dashed var(--border); }
+    .item-head {
+      display: flex; justify-content: space-between; flex-wrap: wrap;
+      gap: 4px 12px; align-items: baseline;
+    }
+    .item-head strong { font-size: 16px; }
+    .item-head .time { color: var(--text-muted); font-size: 13px; }
+    .item .role { color: var(--primary); font-size: 14px; margin: 2px 0 6px; }
+    .item ul { padding-left: 20px; color: #4b5563; font-size: 14.5px; }
+    .item ul li { margin: 3px 0; }
+
+    /* ===== 技能 ===== */
+    .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+    .skill {
+      background: var(--primary-light); color: #17407e;
+      padding: 7px 16px; border-radius: 10px; font-size: 14px;
+      border: 1px solid #cdddf5;
+    }
+
+    footer {
+      text-align: center; color: var(--text-muted);
+      font-size: 13px; padding: 20px 0 32px;
+    }
+    footer a { color: var(--primary); text-decoration: none; }
+
+    /* ===== 移动端适配 ===== */
+    @media (max-width: 640px) {
+      header { padding: 40px 0 36px; }
+      .hero { flex-direction: column; align-items: flex-start; gap: 16px; }
+      .hero h1 { font-size: 24px; }
+      .card { padding: 16px; }
+      .contact-bar .container { flex-direction: column; gap: 6px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container hero">
+      <div class="avatar">沈</div>
+      <div>
+        <h1>沈鹤</h1>
+        <p class="tagline">大数据管理与应用专业 · 移动端开发方向 · 2027届本科生</p>
+        <div class="tags">
+          <span class="tag">HBuilderX 移动端开发</span>
+          <span class="tag">个人项目实战</span>
+          <span class="tag">大连 · 辽宁</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="contact-bar">
+    <div class="container">
+      <span>📞 <a href="tel:13352296556">133-5229-6556</a></span>
+      <span>✉️ <a href="mailto:3127152980@qq.com">3127152980@qq.com</a></span>
+      <span>🎓 大连财经学院 · 管理学院</span>
+      <span>📅 预计 2027 年 6 月毕业</span>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <section>
+      <h2>教育背景</h2>
+      <div class="card">
+        <div class="item">
+          <div class="item-head">
+            <strong>大连财经学院 · 大数据管理与应用专业</strong>
+            <span class="time">2023.09 – 2027.06（本科）</span>
+          </div>
+          <ul>
+            <li>系统学习数据分析、数据库管理与信息系统相关课程</li>
+            <li>已通过全国计算机等级考试（二级），具备扎实的技术基础</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>项目经历</h2>
+      <div class="card">
+        <div class="item">
+          <div class="item-head">
+            <strong>个人简历网站（移动端 + 桌面端）</strong>
+            <span class="time">在校项目 · 独立开发</span>
+          </div>
+          <p class="role">项目负责人 / 前端开发</p>
+          <ul>
+            <li>使用 HBuilderX 开发支持移动端与桌面端访问的个人简历网站，实现响应式布局自适应</li>
+            <li>完成 Android 应用打包与分发流程实践，掌握从开发到发布的端到端链路</li>
+            <li>通过 GitHub Pages 部署上线，公网可访问、纯静态、零依赖</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>专业技能</h2>
+      <div class="card">
+        <div class="skills">
+          <span class="skill">HTML5 / CSS3</span>
+          <span class="skill">JavaScript 基础</span>
+          <span class="skill">HBuilderX</span>
+          <span class="skill">Android 应用打包</span>
+          <span class="skill">Git / GitHub Pages</span>
+          <span class="skill">计算机二级</span>
+          <span class="skill">大数据管理基础</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>校园经历</h2>
+      <div class="card">
+        <div class="item">
+          <div class="item-head">
+            <strong>校内计算机社团 · 成员</strong>
+            <span class="time">在校期间</span>
+          </div>
+          <ul>
+            <li>参与社团技术活动与项目交流，持续积累编程实践经验</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>自我评价</h2>
+      <div class="card">
+        <p style="font-size:14.5px; color:#4b5563;">
+          注重动手能力与身体素质并行发展：课余以编程实战为核心方向，同时坚持篮球运动。
+          学习能力强，正在从基础认证走向移动端开发实战与个人作品输出，
+          目标是将更多想法从"生成"做到"上线"。
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      沈鹤 · <a href="mailto:3127152980@qq.com">3127152980@qq.com</a> · 由 WorkBuddy 生成并部署
+    </div>
+  </footer>
+
+</body>
+</html>
