@@ -1,0 +1,106 @@
+{
+  "seed_words": [
+    "尽快",
+    "立刻",
+    "年内",
+    "本季度",
+    "短期",
+    "当前",
+    "压力",
+    "考验",
+    "挑战",
+    "契机"
+  ],
+  "seed_direct": [
+    "尽快",
+    "立刻",
+    "年内",
+    "本季度",
+    "短期",
+    "当前"
+  ],
+  "seed_indirect": [
+    "压力",
+    "考验",
+    "挑战",
+    "契机"
+  ],
+  "expanded_lexicon": [
+    "严峻",
+    "冲击",
+    "压力",
+    "及早",
+    "契机",
+    "尽快",
+    "尽早",
+    "年内",
+    "当下",
+    "当前",
+    "承压",
+    "挑战",
+    "本季度",
+    "本季度内",
+    "瓶颈",
+    "目前",
+    "眼下",
+    "眼前",
+    "短期",
+    "窗口期",
+    "立刻",
+    "立即",
+    "紧迫",
+    "考验",
+    "迅即",
+    "近期",
+    "迫切",
+    "马上"
+  ],
+  "lexicon_size": 28,
+  "metric_formula": "Myopia = (短视词频 / MD&A总词频) × 100",
+  "sample_results": [
+    {
+      "firm": "绿源科技",
+      "year": 2022,
+      "soe": 0,
+      "polluting": 0,
+      "rd_intensity": 8.7,
+      "short_term_hits": 0,
+      "mda_total_words": 89,
+      "myopia": 0.0
+    },
+    {
+      "firm": "恒盛制造",
+      "year": 2022,
+      "soe": 0,
+      "polluting": 1,
+      "rd_intensity": 4.1,
+      "short_term_hits": 14,
+      "mda_total_words": 69,
+      "myopia": 20.2899
+    },
+    {
+      "firm": "中环工业",
+      "year": 2022,
+      "soe": 1,
+      "polluting": 1,
+      "rd_intensity": 6.2,
+      "short_term_hits": 6,
+      "mda_total_words": 72,
+      "myopia": 8.3333
+    },
+    {
+      "firm": "速达电子",
+      "year": 2022,
+      "soe": 0,
+      "polluting": 0,
+      "rd_intensity": 2.3,
+      "short_term_hits": 15,
+      "mda_total_words": 77,
+      "myopia": 19.4805
+    }
+  ],
+  "validity": {
+    "predictive_validity_pearson_myopia_rd": -0.9536,
+    "interpretation": "短视与研发投入负相关，验证预测效度"
+  }
+}
